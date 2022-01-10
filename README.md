@@ -1,10 +1,10 @@
 # Portfolio Template
 
-### A beautiful minimal and accessible portfolio template for Developers ✨.
+### My Resume ✨.
 
-To View the live site click [here &rarr;](https://portfolio-template.surge.sh)
 
-![Portfolio Gif](/images/portfolio.gif)
+
+
 
 ## Features
 
@@ -16,25 +16,7 @@ To View the live site click [here &rarr;](https://portfolio-template.surge.sh)
 - Fully Responsive.
 - Loads fast ⚡.
 
-## Lighthouse Report
 
-![Lighthouse Report](/images/lighthouse-report.png)
-
-### Contributions are warmly welcomed ❤️.
-
-## Getting Started 🚀
-
-You'll need [Git](https://git-scm.com) to be installed on your computer. 
-```
-# Clone this repository
-$ git clone https://github.com/nisarhassan12/portfolio-template
-```
-
-If you don't have Git installed or you don't like using the terminal then you can download the [zip](https://github.com/nisarhassan12/portfolio-template/archive/master.zip) and extract that and open the extracted folder in the code editor of your your choice.
-
-## Editing the Template 🔨
-
-Go to `index.html` and fill your information. 
 
 ### Header
 
@@ -63,7 +45,7 @@ Each div with class `work__box` represents a project, replace the contents of th
     <div class="work__text">
     <h3>Portfolio Template</h3>
     <p>
-        A free Open Source Portfolio for anyone to use for free.
+       Fathima Nawrin
     </p>
     <ul class="work__list">
         <li>HTML</li>
@@ -97,129 +79,234 @@ For changing the screenshot:
 - Recommended size for project image (1366 x 767px) also make sure the size of all  project images is the same.
 
 ```html
-<img
-    src="./images/name-of-your-image.png"
-    class="work__image"
-    alt="Project 1"
-/>
-```
+<!DOCTYPE html>
+<html lang="en">
 
-### Clients Section
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-- Place the logos of the clients and companies that you have worked with in `images/` directory and then replace the name in `src` with the name of your logos accordingly.
+  <!-- Put your site title here -->
+  <title>
+    Fathima Nawrin | A Web Developer,Srilanka.
+  </title>
 
-- Make sure that you don't have whitespace on either side of the logos.
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
 
-```html
-<img
-    src="./images/your-logo.png"
-    class="client__logo"
-    alt="Your Logo"
-/>
-```
+<body>
 
-### About Section
+  <!-- ***** Header ***** -->
 
-- Replace the contents in the below paragraph with information about yourself.
-- Place a nice photo of yourself in the `images/` directory and then change the name in the src with your image name.
-
-```html
-<section class="about" id="about">
+  <header class="header" role="banner" id="top">
     <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Education</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Fathima Nawrin</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Web Developer, Srilankan.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Online Bus Reservation system</h3>
+              <p>
+                Created an online platform that will be useful for the passenger, bus owner, and bus conductor to manage the process effectively and efficiently inside the long journey buses.
+
+                Technologies used: MySQL, React, Yii2 PHP Framework.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Yii2 PHP Framework</li>
+                <li> MySQL</li>
+               
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/fathimanawrin/Softwareproject" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/fathimanawrin" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.jpeg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Rewarding Plastic Recycler Machine</h3>
+              <p>
+                Rewarding plastic recycler is a special type of plastic recycling Machine which shreds the plastics inserted to it and rewarding back its user with a reward of his/her opinion such as money, water or charging time.
+              </p>
+              <ul class="work__list">
+                <li>Atmega32 microcontroller language</li>
+                <li>Atmel Studio</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.jpeg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+            
+    </section>
+
+  <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Education</h2>
+        <h1><b>B.SC.(HONS.)DEGREE IN INFORMATION TECHNOLOGY</b> </h1>
+          <h1>2018 - 2022</h1> </br>
+          <h1><i>Faculty of Information Technology,Moratuwa,Kadubbetha</i></h1>
+          
+        After A/l result i selected to university of moratuwa faculty of information technology to 2018 batch .This course duration is approximately 4 year include with internship</h1>
+      </br> </br>
+      <h1><b> G.C.E ADVANCE LEVEL (2017)</b></h1>    </br>
+        3A passes.
+      </br>
+        Z-score- 1.7710 college 
+      </br> </br>  
+      <h1><b>  AWARD AND ACHEIVEMENT</b></h1>
+    </br> 
+          Semi Finalist of Idealize 2021 powered by Ideamart.
+          Participated (Team)  </br> 
+          Organized by AIESEC in University of Moratuwa.
+    </br>    </br>
+          Participated in HACKMORAL 3.0 -MINI HACKATHON
+          Organized by INTECS, Faculty of Information Technology, University Of
+          Moratuwa. (2021) 
+        
+
+
+
+        
+        
+    </section>
+
+    <!-- ***** About ***** -->3
+
+    <section class="about" id="about">
+      <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
-            <div class="about__text">
-                <!-- Replace the below paragraph with info about yourself -->
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-                nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-                in vel, ex quam quidem quos mollitia labore aut sunt eius
-                ratione molestiae fuga veniam facere similique voluptate.
-                </p>
-                <!-- Provide a link to your resume -->
-                <a href="#" class="btn">My Resume</a>
-            </div>
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I am Fathima Nawrin from Rathnapura and 23 years old Undergraduate student of university of Moratuwa.The graduation year is 2022 .I am a speed leaner and IT enthusastist.creative wrighting is my hobby.i love coding and travelling .
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
 
-            <div class="about__photo-container">
-                <!-- Add a nice photo of yourself -->
-                <img
-                class="about__photo"
-                src="./images/syed-ali-hussnain.jpg"
-                alt=""
-                />
-            </div>
-        </div>
-    </div>
-</section>
-```
-
-### Contact Section
-
-- Modify the paragraph to your likings.
-- Replace the email with yours in the `href` anchor property and the text also.
-
-```html
-<section class="contact" id="contact">
-      <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
-          <p>
-            Are you looking for a fast-performing and user-friendly website to
-            represent your product or business? or looking for any kind of
-            consultation? or want to ask questions? or have some advice for me
-            or just want to say "Hi 👋" in any case feel free to Let me know. I
-            will do my best to respond back. 😊 The quickest way to reach out to
-            me is via an email.
-          </p>
-          <!-- Replace the email with yours -->
-          <a href="mailto:you@example.com" class="btn">you@example.com</a>
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/fathimanawrin.jpeg" alt="" />
+          </div>
         </div>
       </div>
-</section>
-```
+    </section>
+  </main>
 
-### Footer
+  <!-- ***** Contact ***** -->
 
-- Replace the `href` attribute values to your profile URLs for all anchors.
-- Remove the div with class `footer__github-buttons`.
-
-```html
-<footer role="contentinfo" class="footer">
+  <section class="contact" id="contact">
     <div class="row">
-        <!-- Update the links to point to your accounts -->
-        <ul class="footer__social-links">
-            <li class="footer__social-link-item">
-                <a href="https://twitter.com/nisarhassan12/">
-                    <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href="https://github.com/nisarhassan12/">
-                    <img src="./images/github.svg" class="footer__social-image" alt="Github">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href="https://codepen.io/nisar_hassan">
-                    <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-                    <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
-                </a>
-            </li>
-        </ul>
-
-        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
         <p>
-          &copy; 2020 - Template designed & developed by <a href="https://nisar.dev">Nisar</a>.
+          Are you looking for a fast-performing and user-friendly website to
+          represent your product or business? or looking for any kind of
+          consultation? or want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
         </p>
-        <div class="footer__github-buttons">
-          <iframe
-            src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true" 
-            frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-          </iframe>
-        </div>
+        <!-- Replace the email with yours -->
+        <a href="mailto:fathimanawrin2@gmail.com" class="btn">fathimanawrin2@gmail.com</a>
+      </div>
     </div>
-</footer>
-```
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        
+        <li class="footer__social-link-item">
+          <a href="https://github.com/fathimanawrin" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+       
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/nawrin22/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="file:///C:/Users/comnet/Desktop/resume/portfolio-template/index.html#contact" class="link">Nawrin</a>.
+      </p>
+    
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
