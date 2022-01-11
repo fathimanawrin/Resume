@@ -2,7 +2,7 @@
 
 ### My Resume ✨.
 
-
+https://user-images.githubusercontent.com/89245783/148860641-64434ddf-175f-47c3-b1c5-adc9f9094d41.mp4
 
 
 
